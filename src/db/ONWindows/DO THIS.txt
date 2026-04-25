@@ -1,1 +1,12 @@
-Replace all the code in db/DBConnection.java with the code in this file ..... dont REPLACE the FILES the NAME is important in the code
+1.Replace all the code in db/DBConnection.java with the code in this file ..... dont REPLACE the FILES the NAME is important in the code
+
+2.Check for your Java version and download the correct mssql-jdbc-12.x.x.jre11.jar for it
+
+3. Open the new code you put in DBConnection and change this:
+        javaprivate static final String PASS = "YourPasswordHere"; // ← actual SQL Server password
+
+4. If you use Windows Authentication, use change code to this:
+        private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=CollegeDB;integratedSecurity=true;encrypt=false";
+
+
+(If you dont know ask AI I cant help with that I don't use Windows)
